@@ -1,0 +1,18 @@
+title: Transparência Maceió
+description: >-
+  Detalhamento dos gastos dos vereados da cidade de Maceió, capital do estado de
+  Alagoas, Brasil.
+template:
+  repo: transparencia-maceio-template
+  name: transparencia-maceio
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
